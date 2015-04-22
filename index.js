@@ -2,6 +2,8 @@
 // https://github.com/django/django-localflavor/
 // https://en.wikipedia.org/wiki/Canadian_postal_abbreviations_for_provinces_and_territories
 
+(function() {
+
 var e = {}; // exports
 
 /** Mapping of US State and Territory postal abbreviations to full names. */
@@ -388,4 +390,17 @@ e.region = function(name) {
   return e.US_REGIONS_BY_STATE[e.postalAbbr(name)];
 };
 
-module.exports = e;
+// Export for CommonJS, AMD, and browser global
+if (typeof define === 'function' && define.amd) {
+  // AMD
+  define(function() {
+    return e;
+  });
+} else if (typeof module !== "undefined" && module.exports) {
+  // CommonJS
+  module.exports = e;
+} else {
+  // Global, in-browser
+  this.USRegions = e;
+}
+})(this);

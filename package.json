@@ -2,7 +2,7 @@
   "name": "us-regions",
   "author": "",
   "email": "cfd@media.mit.edu",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Lists of US and Canadian states and territories",
   "license": "BSD-3-Clause",
   "main": "index.js",

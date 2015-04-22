@@ -1,0 +1,23 @@
+{
+  "name": "us-regions",
+  "main": "index.js",
+  "version": "0.0.3",
+  "homepage": "https://github.com/AdmitHub/us-regions",
+  "authors": [
+    "Charlie DeTar <cfd@media.mit.edu>"
+  ],
+  "description": "Lists of US and Canadian states, territories and regions",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "license": "BSD-3-clause",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

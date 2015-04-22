@@ -6,12 +6,22 @@ Lists of states and territories in the US and Canada, and mappings to regions.  
 Installation
 ------------
 
+In node:
+
     npm install us-regions
+
+For the browser:
+
+    bower install us-regions
 
 Usage
 -----
 
+In node, require it:
+
     var regions = require("us-regions");
+
+In the browser, the global ``USRegions`` is available.
 
  - ``regions.postalAbbr(name)``: Returns a postal abbreviation (e.g. "CA", "MT", "MA") for the given state or territory name or abbreviation (e.g. "calif", "Montana", "Mass."), or undefined if not found.
  - ``regions.normalize(name)``: Returns a normalized full name ("District of Columbia", "Newfoundland and Labrador", "Wyoming") for the given state or territory name or abbreviation ("DC", "Newfoundland", "wyo"), or undefined if not found.
